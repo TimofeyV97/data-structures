@@ -4,7 +4,7 @@ package app.orderedarray;
 public class Main {
 
     public static void main(String[] args) {
-        final OrderedArray orderedArray = new OrderedArray(100);
+        final OrderedArray orderedArray = new OrderedArray(7);
 
         orderedArray.insert(23);
         orderedArray.insert(12);

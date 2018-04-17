@@ -51,7 +51,7 @@ public class OrderedArray {
 
         if (i == size) return false;
         else {
-            for (int k = i; k < size; k++) array[k] = array[k + 1];
+            for (int k = i; k < size - 1; k++) array[k] = array[k + 1];
             size--;
         }
 
