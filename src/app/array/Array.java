@@ -34,9 +34,7 @@ public class Array<T> {
 
         if (i == size) return false;
         else {
-            for (int k = i; k < size - 1; k++) {
-                array[k] = array[k + 1];
-            }
+            for (int k = i; k < size - 1; k++) array[k] = array[k + 1];
 
             size--;
 
@@ -45,10 +43,8 @@ public class Array<T> {
     }
 
     public void display() {
-        for (int i = 0; i < size; i++) {
-            System.out.print(array[i] + " ");
-            System.out.println();
-        }
+        for (int i = 0; i < size; i++) System.out.print(array[i] + " ");
+        System.out.println();
     }
 
 }
