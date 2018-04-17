@@ -3,7 +3,7 @@ package app.array;
 
 public class Array<T> {
 
-    private final T[] array;
+    private T[] array;
 
     private int size;
 
