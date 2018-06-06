@@ -1,4 +1,4 @@
-package app.classdataarray;
+package app.class_data_array;
 
 
 public class Main {
