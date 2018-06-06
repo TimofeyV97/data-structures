@@ -1,5 +1,6 @@
 package app.bubble_sort;
 
+
 public class BubbleSort {
 
     private long[] array;
@@ -29,7 +30,7 @@ public class BubbleSort {
         }
     }
 
-    public void swap(final int i, final int i2) {
+    private void swap(final int i, final int i2) {
         long tmp = array[i];
         array[i] = array[i2];
         array[i2] = tmp;
