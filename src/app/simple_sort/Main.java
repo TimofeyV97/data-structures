@@ -1,10 +1,10 @@
-package app.bubble_sort;
+package app.simple_sort;
 
 
 public class Main {
 
     public static void main(String[] args) {
-        BubbleSort bs = new BubbleSort(10);
+        SimpleSort bs = new BubbleSort(10);
 
         bs.insert(10);
         bs.insert(20);
@@ -19,7 +19,7 @@ public class Main {
 
         bs.display();
 
-        bs.bubbleSort();
+        bs.sort();
 
         bs.display();
     }
