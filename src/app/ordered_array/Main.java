@@ -16,15 +16,21 @@ public class Main {
 
         orderedArray.display();
 
-        if (orderedArray.find(12) != orderedArray.getSize()) System.out.println("Found");
-        else System.out.println("Not found");
+        if (orderedArray.find(12) != orderedArray.getSize()) {
+            System.out.println("Found");
+        } else {
+            System.out.println("Not found");
+        }
 
         orderedArray.remove(100);
         orderedArray.remove(1200);
         orderedArray.remove(98);
 
-        if (orderedArray.find(100) != orderedArray.getSize()) System.out.println("Found");
-        else System.out.println("Not found");
+        if (orderedArray.find(100) != orderedArray.getSize()) {
+            System.out.println("Found");
+        } else {
+            System.out.println("Not found");
+        }
 
         orderedArray.display();
     }

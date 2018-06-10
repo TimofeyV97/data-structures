@@ -14,7 +14,9 @@ public class Array<T> {
 
     public boolean find(final T element) {
         for (int i = 0; i < size; i++) {
-            if (array[i] == element) return true;
+            if (array[i] == element) {
+                return true;
+            }
         }
 
         return false;
@@ -29,12 +31,17 @@ public class Array<T> {
         int i;
 
         for (i = 0; i < size; i++) {
-            if (array[i] == element) break;
+            if (array[i] == element) {
+                break;
+            }
         }
 
-        if (i == size) return false;
-        else {
-            for (int k = i; k < size - 1; k++) array[k] = array[k + 1];
+        if (i == size) {
+            return false;
+        } else {
+            for (int k = i; k < size - 1; k++) {
+                array[k] = array[k + 1];
+            }
 
             size--;
 
@@ -43,7 +50,10 @@ public class Array<T> {
     }
 
     public void display() {
-        for (int i = 0; i < size; i++) System.out.print(array[i] + " ");
+        for (int i = 0; i < size; i++) {
+            System.out.print(array[i] + " ");
+        }
+
         System.out.println();
     }
 

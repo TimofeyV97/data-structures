@@ -15,8 +15,11 @@ public class Main {
 
         array.display();
 
-        if (array.find(34)) System.out.println("Found");
-        else System.out.println("Not found");
+        if (array.find(34)) {
+            System.out.println("Found");
+        } else {
+            System.out.println("Not found");
+        }
 
         array.remove(23);
         array.remove(2);

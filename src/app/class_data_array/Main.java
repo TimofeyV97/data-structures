@@ -14,8 +14,11 @@ public class Main {
 
         cda.display();
 
-        if (cda.find("Smith") != null) System.out.println("Found");
-        else System.out.println("Not found");
+        if (cda.find("Smith") != null) {
+            System.out.println("Found");
+        } else {
+            System.out.println("Not found");
+        }
 
         cda.remove("Smith");
         cda.remove("Evans");

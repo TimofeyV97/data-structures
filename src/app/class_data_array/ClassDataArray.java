@@ -16,11 +16,16 @@ public class ClassDataArray {
         int i;
 
         for (i = 0; i < size; i++) {
-            if (array[i].getLastName().equals(lastName)) break;
+            if (array[i].getLastName().equals(lastName)) {
+                break;
+            }
         }
 
-        if (i == size) return null;
-        else return array[i];
+        if (i == size) {
+            return null;
+        } else {
+            return array[i];
+        }
     }
 
     public void insert(final String lastName, final String firstName, final int age) {
@@ -32,12 +37,17 @@ public class ClassDataArray {
         int i;
 
         for (i = 0; i < size; i++) {
-            if (array[i].getLastName().equals(lastName)) break;
+            if (array[i].getLastName().equals(lastName)) {
+                break;
+            }
         }
 
-        if (i == size) return false;
-        else {
-            for (int k = i; k < size - 1; k++) array[k] = array[k + 1];
+        if (i == size) {
+            return false;
+        } else {
+            for (int k = i; k < size - 1; k++) {
+                array[k] = array[k + 1];
+            }
 
             size--;
 
@@ -46,7 +56,9 @@ public class ClassDataArray {
     }
 
     public void display() {
-        for (int i = 0; i < size; i++) array[i].display();
+        for (int i = 0; i < size; i++) {
+            array[i].display();
+        }
     }
 
 }

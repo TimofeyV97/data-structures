@@ -24,11 +24,14 @@ public class OrderedArray {
         while (true) {
             current = (lowerBound + upperBound) / 2;
 
-            if (array[current] == element)  return current;
-            else if (lowerBound > upperBound) return size;
-            else {
-                if (array[current] < element) lowerBound = current + 1;
-                else upperBound = current - 1;
+            if (array[current] == element) {
+                return current;
+            } else if (lowerBound > upperBound) {
+                return size;
+            } else {
+                if (array[current] < element) {
+                    lowerBound = current + 1;
+                } else upperBound = current - 1;
             }
         }
     }
@@ -37,10 +40,14 @@ public class OrderedArray {
         int i;
 
         for (i = 0; i < size; i++) {
-            if (array[i] > element) break;
+            if (array[i] > element) {
+                break;
+            }
         }
 
-        for (int k = size; k > i; k--) array[k] = array[k - 1];
+        for (int k = size; k > i; k--) {
+            array[k] = array[k - 1];
+        }
 
         array[i] = element;
         size++;
@@ -49,9 +56,13 @@ public class OrderedArray {
     public boolean remove(final long element) {
         int i = find(element);
 
-        if (i == size) return false;
-        else {
-            for (int k = i; k < size - 1; k++) array[k] = array[k + 1];
+        if (i == size) {
+            return false;
+        } else {
+            for (int k = i; k < size - 1; k++) {
+                array[k] = array[k + 1];
+            }
+
             size--;
         }
 
@@ -59,7 +70,10 @@ public class OrderedArray {
     }
 
     public void display() {
-        for (int i = 0; i < size; i++) System.out.print(array[i] + " ");
+        for (int i = 0; i < size; i++) {
+            System.out.print(array[i] + " ");
+        }
+
         System.out.println();
     }
 
