@@ -7,7 +7,7 @@ public class Link {
 
     private String sData;
 
-    public Link next;
+    private Link next;
 
     public Link(final int iData, final String sData) {
         this.iData = iData;

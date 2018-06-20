@@ -16,6 +16,10 @@ public class LinkedList {
         head = link;
     }
 
+    public void remove() {
+        head = head.getNext();
+    }
+
     public void printElements() {
         Link current = head;
 
