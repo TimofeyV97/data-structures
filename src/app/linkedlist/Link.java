@@ -1,4 +1,4 @@
-package app.linked_list;
+package app.linkedlist;
 
 
 public class Link {

@@ -1,4 +1,4 @@
-package app.ordered_array;
+package app.orderedarray;
 
 
 public class Main {

@@ -1,4 +1,4 @@
-package app.class_data_array;
+package app.classdataarray;
 
 
 public class Person {

@@ -1,4 +1,4 @@
-package app.simple_sort;
+package app.simplesort;
 
 
 public class SelectionSort extends SimpleSort {
